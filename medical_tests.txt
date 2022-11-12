@@ -1,0 +1,97 @@
+amniocentesis
+blood analysis
+blood count
+blood typing
+bone marrow aspiration
+cephalin-cholesterol flocculation
+enzyme analysis
+epinephrine tolerance test
+glucose tolerance test
+hematocrit
+immunologic blood test
+inulin clearance
+serological test
+thymol turbidity
+gastric fluid analysis
+kidney function test
+liver function test
+lumbar puncture
+malabsorption test
+Pap smear
+phenolsulfonphthalein test
+pregnancy test
+prenatal testing
+protein-bound iodine test
+syphilis test
+thoracentesis
+thyroid function test
+toxicology test
+urinalysis
+uroscopy
+angiocardiography
+angiography
+cerebral angiography
+brain scanning
+echoencephalography
+magnetoencephalography
+pneumoencephalography
+cholecystography
+echocardiography
+endoscopic retrograde cholangiopancreatoscopy
+lung ventilation/perfusion scan
+magnetic resonance imaging
+cardiac magnetic resonance imaging
+functional magnetic resonance imaging
+magnetic resonance spectroscopy
+mammography
+myelography
+prenatal testing
+tomography
+computed tomography
+positron emission tomography
+single photon emission computed tomography
+ultrasound
+urography
+complementation test
+fluorescence in situ hybridization
+preimplantation genetic diagnosis
+ballistocardiography
+electrocardiography
+electroencephalography
+electromyography
+lumbar puncture
+magnetic resonance spectroscopy
+phonocardiography
+pulmonary function test
+semen analysis
+auscultation
+autopsy
+biopsy
+bronchoscopy
+cardiac catheterization
+colposcopy
+Dick test
+endoscopy
+esophagogastroduodenoscopy
+gynecological examination
+laparoscopy
+mediastinoscopy
+nasopharyngolaryngoscopy
+palpation
+percussion
+Rubin’s test
+semen analysis
+skin test
+patch test
+Schick test
+tuberculin test
+toxicological examination
+uroscopy
+spirometry
+challenge test
+urine test
+CT scans
+MRI scans
+cystoscopy
+MRE
+chemotherapy

@@ -1,0 +1,71 @@
+{
+  "lang":"en",
+  "name":"pipeline",
+  "version":"0.0.0",
+  "spacy_version":">=3.2.4,<3.3.0",
+  "description":"",
+  "author":"",
+  "email":"",
+  "url":"",
+  "license":"",
+  "spacy_git_version":"b50fe5ec6",
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0,
+    "name":null,
+    "mode":"default"
+  },
+  "labels":{
+    "tok2vec":[
+
+    ],
+    "ner":[
+      "DRUG",
+      "MEDICAL CONDITION",
+      "MEDICAL PROCEDURE",
+      "PATHOGEN",
+      "SYMPTOMS"
+    ]
+  },
+  "pipeline":[
+    "tok2vec",
+    "ner"
+  ],
+  "components":[
+    "tok2vec",
+    "ner"
+  ],
+  "disabled":[
+
+  ],
+  "performance":{
+    "ents_f":0.25,
+    "ents_p":0.2083333333,
+    "ents_r":0.3125,
+    "ents_per_type":{
+      "MEDICAL CONDITION":{
+        "p":0.3333333333,
+        "r":0.4545454545,
+        "f":0.3846153846
+      },
+      "PATHOGEN":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "DRUG":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "SYMPTOMS":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      }
+    },
+    "tok2vec_loss":147.8282136692,
+    "ner_loss":149.5709812541
+  }
+}
