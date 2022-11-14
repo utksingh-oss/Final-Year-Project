@@ -28,7 +28,7 @@ patterns_p = [pattern_1 , pattern_2 , pattern_3 , pattern_4 , pattern_5 , patter
 
 matcher.add("noun phrase" , patterns = patterns_p)
 
-model = spacy.load("D:\\Final Year Project\\model-best")
+# model = spacy.load("D:\\Final Year Project\\model-best") 
 
 sentence1 = "Asthma is a condition that can cause the airways in your lungs to swell and narrow, making it harder for air to move in and out. Airways can also become inflamed and produce more mucus than normal. These changes in the airways cause symptoms such as difficulty breathing, coughing, and wheezing. This animation from the American Lung Association can help you understand the difference between healthy lungs and lungs with asthma.\r"
 sentence2 = """Osteoarthritis (OA) is a well-known cause of disability in the United States and around the world. It is characterized by degeneration of articular cartilage and other joint changes, and it commonly presents as joint pain with ambulation or other activities of daily living, depending on the joint(s) affected. According to the analysis of data from 3 large US population‐based studies, it is estimated that almost 27 million Americans 25 years of age and older suffer from clinical OA, a number that has increased from estimates in the 1990s.6 Prevalence is much higher in women, as females comprise approximately 78 of adults with OA.7 Prevalence also increases with age; 43 of adults over the age of 65 years have OA. This age group is expected to increase from 15 of the US population to 24 in the next 40 years.8 It should be noted that exact figures for incidence and prevalence are difficult to obtain due to differences in study designs and definitions of OA.\r"""
@@ -303,13 +303,19 @@ def get_most_important_sentences_summary(documents):
 
 
 def return_top_ten(document , list_of_words):
-	values = get_TF_IDF_Values_for_word(document, list_of_words)
+	new_list_of_word = []
+	for word in list_of_words:
+		if not isinstance(word,str):
+			new_list_of_word.append(word.text)
+		else:
+			new_list_of_word.append(word)
+	values = get_TF_IDF_Values_for_word(document, new_list_of_word)
 	sorted_list = sorted(values)
-	values = values[0:10]
-	return values
-
-sentence = "This patient was diagnosed with ovarian cancer. Symptoms recorded in the patients were such as persistent bloating, pain in the pelvis and lower stomach, and difficulty eating. The treatment you receive for ovarian cancer will depend on several things, including the stage of your cancer and your general health. Chemotherapy is the main treatment for ovarian cancer, but your treatment will usually involve a combination of surgery and chemotherapy."
-med_con , symptoms , test = get_all_keywords(sentence)
-print("Medical conditions detected : " , med_con)
-print("Symptoms detected :" , symptoms)
-print("Tests deteceted : ", test)
+	print(values)
+	if len(values) < 10:
+		return values
+	new_values = []
+	for i in range(10):
+		if i < len(values):
+			new_values.append(values[i])
+	return new_values

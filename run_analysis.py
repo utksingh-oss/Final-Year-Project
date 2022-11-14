@@ -31,12 +31,13 @@ class PatientSummaryGenerator:
 			"""Getting just the top 10 most important terms"""
 			medical_conditions = return_top_ten(diagnosis , medical_conditions)
 			symptoms = return_top_ten(diagnosis , symptoms)
-			tests = return_top_ten(diagnosis , symptoms)
+			tests = return_top_ten(diagnosis , tests)
 
 
 			print("medicines b/f spliting : ", medicines)
 			medicines = medicines.split("\n")
 			print("medicines first : " , medicines)
+
 			for condition in medical_conditions:
 				med_con_dic[condition] = date 
 
@@ -75,7 +76,7 @@ class PatientSummaryGenerator:
 		print("Medicine string: ",medicine_string)
 
 		remark_summary = get_most_important_sentences_summary(remarks)
-
+		#insert_summary(self , patient_id , medicines , medical_procedures , health_conditions , symptoms , remarks):
 		self.add_patient_summary.insert_summary(patient_id ,  medicine_string , medical_test_string , medical_condition_string , medical_symptoms_string , remark_summary)
 
 

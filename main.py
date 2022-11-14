@@ -8,6 +8,8 @@ from add_patients_summary import PatientSummary
 import pandas as pd
 from datetime import datetime
 
+
+
 selection = st.sidebar.radio("Navigation",["Add Patient's Details","Add Patient's Diagnosis","Get Patient's Summary"])
 if selection == "Add Patient's Details":
 	st.title("Patient's Registration Form")
@@ -88,6 +90,7 @@ elif selection == "Get Patient's Summary":
 
 
 			#===================================================================================
+			
 			st.write("MEDICAL CONDITIONS")
 			medical_conditions_table = {
 				"date" : [],

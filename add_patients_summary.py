@@ -19,6 +19,7 @@ class PatientSummary:
 
 	#Insert Patient's Details
 	def insert_summary(self , patient_id , medicines , medical_procedures , health_conditions , symptoms , remarks):
+		print("INSERTING FOR PATIENT : ", patient_id)
 		self.delete_user_entry(patient_id)
 		query = "insert into patients_summary(patient_id , medicines , health_conditions , medical_procedures , symptoms , remark) values('{}','{}','{}','{}','{}','{}')".format(patient_id , medicines , health_conditions , medical_procedures , symptoms, remarks)
 		cur = self.con.cursor()
